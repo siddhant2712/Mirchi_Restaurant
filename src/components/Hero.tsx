@@ -47,11 +47,11 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className={styles.orderButtons}>
-            <a href="https://www.zomato.com/ballia/mirchi-restaurant-ballia-locality/order?v=o2" target="_blank" rel="noopener noreferrer" className={styles.swiggyBtn}>
+            <a href="https://www.swiggy.com/city/ballia/mirchi-restaurant-piparpati-piparpati-rest1171525?utm_source=GooglePlaceOrder&utm_campaign=GoogleMap&is_retargeting=true&media_source=GooglePlaceOrder" className={styles.swiggyBtn}>
               <ShoppingBag size={20} />
               <span>Order on Swiggy</span>
-            </a>
-            <a href="https://www.swiggy.com/city/ballia/mirchi-restaurant-piparpati-piparpati-rest1171525?utm_source=GooglePlaceOrder&utm_campaign=GoogleMap&is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener noreferrer" className={styles.zomatoBtn}>
+            </a> target="_blank" rel="noopener noreferrer
+            <a href="https://www.zomato.com/ballia/mirchi-restaurant-ballia-locality/order?v=o2" target="_blank" rel="noopener noreferrer" className={styles.zomatoBtn}>
               <ShoppingBag size={20} />
               <span>Order on Zomato</span>
             </a>
