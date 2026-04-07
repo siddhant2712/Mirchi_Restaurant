@@ -1,0 +1,200 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+.bgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.bgImg {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(10, 10, 10, 0.2) 0%,
+    rgba(10, 10, 10, 0.8) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  max-width: 1000px;
+  text-align: center;
+  z-index: 10;
+  padding-top: 5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.fireEmoji {
+  font-size: 1.2rem;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-size: clamp(2.8rem, 12vw, 7rem);
+  line-height: 1.05;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.gradientText {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.description {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.orderButtons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .orderButtons {
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+.swiggyBtn, .zomatoBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.swiggyBtn {
+  background: #FC8019;
+  color: white;
+}
+
+.zomatoBtn {
+  background: #E23744;
+  color: white;
+}
+
+.swiggyBtn:hover, .zomatoBtn:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.viewMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.viewMenu:hover {
+  border-bottom-color: var(--secondary);
+}
+
+.rating {
+  margin-top: 4rem;
+  color: #888;
+}
+
+.stars {
+  color: var(--secondary);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .scrollDown {
+    display: block;
+  }
+}
+
+.mouse {
+  width: 25px;
+  height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  position: relative;
+}
+
+.wheel {
+  width: 5px;
+  height: 8px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
