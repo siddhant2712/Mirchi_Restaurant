@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import Image from 'next/image';
-import { Phone, Mail, Globe } from 'lucide-react';
+import { Phone, Mail, Globe, Star } from 'lucide-react';
 
 const Footer: React.FC = () => {
     return (
@@ -21,22 +21,42 @@ const Footer: React.FC = () => {
                         </p>
                     </div>
 
+                    <div className={styles.rateUs}>
+                        <h4 className={styles.linkTitle}>Rate Us</h4>
+                        <div className={styles.stars}>
+                            {[...Array(5)].map((_, i) => (
+                                <Star key={i} size={20} fill="var(--secondary)" color="var(--secondary)" />
+                            ))}
+                        </div>
+                        <p className={styles.rateText}>
+                            Mirchi Restaurant & Hotel would love your feedback. Post a review to our profile.
+                        </p>
+                        <a 
+                            href="https://g.page/r/CfxugZC0DIDtEBE/review" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className={styles.rateLink}
+                        >
+                            Write a Review →
+                        </a>
+                    </div>
+
                     <div className={styles.links}>
-                        <h4 className={styles.linkTitle}>Quick Links</h4>
+                        <h4 className={styles.linkTitle}>Links</h4>
                         <div className={styles.linkGrid}>
                             <a href="#menu" className={styles.link}>Menu</a>
                             <a href="#features" className={styles.link}>Features</a>
-                            <a href="#gallery" className={styles.link}>Gallery</a>
+                            <a href="#booking" className={styles.link}>Booking</a>
                             <a href="#contact" className={styles.link}>Contact</a>
                         </div>
                     </div>
 
                     <div className={styles.social}>
-                        <h4 className={styles.linkTitle}>Contact Us</h4>
+                        <h4 className={styles.linkTitle}>Get in Touch</h4>
                         <div className={styles.socialIcons}>
                             <a href="tel:08354019620" className={styles.socialIcon}><Phone size={20} /></a>
                             <a href="mailto:contact@mirchihotel.com" className={styles.socialIcon}><Mail size={20} /></a>
-                            <a href="#" className={styles.socialIcon}><Globe size={20} /></a>
+                            <a href="https://maps.app.goo.gl/ooVcxwWXQjkB3xJK7" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}><Globe size={20} /></a>
                         </div>
                     </div>
                 </div>
