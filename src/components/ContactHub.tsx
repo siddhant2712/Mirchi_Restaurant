@@ -29,8 +29,8 @@ const ContactHub: React.FC = () => {
         {
             icon: <MapPin size={28} />,
             label: "Visit Us",
-            value: "Bahadurpur, Ballia",
-            href: "https://maps.google.com/?q=Mirchi+Restaurant+Hotel+Meena+Bazar+Ballia",
+            value: "Meena Bazar, Ballia",
+            href: "https://maps.app.goo.gl/ooVcxwWXQjkB3xJK7",
             color: "var(--secondary)"
         }
     ];

@@ -14,7 +14,7 @@ const BookingSection: React.FC = () => {
     {
         icon: <Hotel size={24} />,
         title: "Luxury AC Rooms",
-        desc: "Modern amenities and premium comfort for your stay in Ballia."
+        desc: "Starting at ₹1000/night — Premium comfort and local hospitality in Ballia."
     },
     {
         icon: <CheckCircle size={24} />,
@@ -61,8 +61,8 @@ const BookingSection: React.FC = () => {
             >
                 <h2 className={styles.title}>Celebrate & <span className="gradient-text">Stay</span></h2>
                 <p className={styles.subtitle}>
-                  From grand weddings to comfortable overnight stays, Mirchi Restaurant & Hotel 
-                  is Ballia's premier destination for hospitality. 
+                  From grand weddings to luxury room bookings <strong>starting at ₹1000 per night</strong>, 
+                  Mirchi Restaurant & Hotel is Ballia's premier luxury destination.
                 </p>
             </motion.div>
 
